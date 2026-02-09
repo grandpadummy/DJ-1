@@ -11,11 +11,12 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 import os
 from pathlib import Path
+from decouple import config
 
 # from dotenv import load_dotenv
 # load_dotenv()
 
-from decouple import config
+
 from django.conf.global_settings import CSRF_TRUSTED_ORIGINS
 from virtualenv.discovery.cached_py_info import clear
 
