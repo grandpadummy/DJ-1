@@ -17,6 +17,7 @@ from pathlib import Path
 
 from decouple import config
 from django.conf.global_settings import CSRF_TRUSTED_ORIGINS
+from virtualenv.discovery.cached_py_info import clear
 
 # This helps generate a secret key ... see below
 #
@@ -72,9 +73,9 @@ ALLOWED_HOSTS = [
     ".railway.app"
 ]
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://*.railway.app"
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     "https://*.railway.app"
+# ]
 
 if DEBUG:
     ALLOWED_HOSTS =["*"]
